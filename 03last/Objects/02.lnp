@@ -1,0 +1,17 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\i2c_application.o"
+".\objects\i2c_config.o"
+".\objects\ssd1306.o"
+".\objects\ssd1306_fonts.o"
+".\objects\eventrecorder.o"
+".\objects\at32f413_crm.o"
+".\objects\at32f413_dma.o"
+".\objects\at32f413_gpio.o"
+".\objects\at32f413_i2c.o"
+".\objects\at32f413_misc.o"
+".\objects\startup_at32f413.o"
+".\objects\system_at32f413.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\02.map" -o .\Objects\02.axf
